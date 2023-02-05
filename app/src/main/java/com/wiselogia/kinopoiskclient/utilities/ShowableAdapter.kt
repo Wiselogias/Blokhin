@@ -47,7 +47,7 @@ class ShowableAdapter(
         ) {
             imageView.glide(showable.image)
             titleView.text = showable.title
-            binding.yearTitle.text = showable.year.toString()
+            binding.yearTitle.text = (showable.year ?: "").toString()
             binding.root.setOnClickListener {
                 onClick(showable)
             }

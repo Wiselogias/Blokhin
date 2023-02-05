@@ -24,8 +24,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:foreground="#BF000000"
-                    tools:srcCompat="@tools:sample/backgrounds/scenic"
-                    />
+                    tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -52,52 +51,53 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:textAlignment="center"
+                        android:textColor="@color/grey"
                         android:textSize="24sp" />
                 </LinearLayout>
 
             </FrameLayout>
 
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="24dp">
+                    android:text="Описание:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Описание:"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/overviewView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/overviewView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/genresView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/genresView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/countriesView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp" />
 
-                    <TextView
-                        android:id="@+id/countriesView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:textSize="16sp"/>
-
-                    <TextView
-                        android:id="@+id/yearView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:textSize="16sp"/>
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/yearView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
 
         </LinearLayout>
 
